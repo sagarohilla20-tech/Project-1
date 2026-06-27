@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics - Why Learn CSS in 2026</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: linear-gradient(to bottom, #f8fafc, #e0f2fe);
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background: linear-gradient(135deg, #ec4899, #8b5cf6);
+            color: white;
+            padding: 100px 0 80px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+        .subtitle {
+            font-size: 1.4rem;
+            opacity: 0.95;
+        }
+        section {
+            padding: 80px 0;
+        }
+        .why-learn {
+            background: white;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .card i {
+            font-size: 3rem;
+            color: #ec4899;
+            margin-bottom: 1.5rem;
+        }
+        .basics {
+            background: #f8fafc;
+        }
+        .code-example {
+            background: #1e2937;
+            color: #e0f2fe;
+            padding: 1.5rem;
+            border-radius: 12px;
+            font-family: monospace;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+            line-height: 1.6;
+        }
+        .comment {
+            color: #64748b;
+        }
+        footer {
+            background: #0f172a;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 3rem 0;
+        }
+        .btn {
+            display: inline-block;
+            background: #ec4899;
+            color: white;
+            padding: 14px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #db2777;
+            transform: translateY(-3px);
+        }
+        .demo-box {
+            background: linear-gradient(135deg, #ec4899, #8b5cf6);
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Hero -->
+    <header>
+        <div class="container">
+            <h1>Learn CSS Basics</h1>
+            <p class="subtitle">Bring Your Websites to Life with Beautiful Design &amp; Layouts</p>
+            <a href="#basics" class="btn">Start Learning CSS →</a>
+        </div>
+    </header>
+
+    <!-- Why Learn CSS -->
+    <section id="why" class="why-learn">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 2.8rem; margin-bottom: 1rem;">Why Should You Learn CSS?</h2>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto 3rem; font-size: 1.2rem; color: #64748b;">
+               Mastering CSS in 2026 is more important than ever as beautiful, responsive, and user-friendly design defines successful websites. CSS allows you to control layout, colors, typography, animations, and mobile experiences. With the growing demand for exceptional user interfaces, strong CSS skills combined with HTML make you highly valuable in front-end development and UI/UX roles.
+            </p>
+
+            <div class="grid">
+                <div class="card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Design Freedom</h3>
+                    <p>Control colors, fonts, spacing, animations, and layouts exactly how you want.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Responsive Design</h3>
+                    <p>Make your websites look perfect on phones, tablets, and desktops.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Modern Web Standards</h3>
+                    <p>Master Flexbox, Grid, animations, and dark mode — essential skills in 2026.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Unlock Better Opportunities</h3>
+                    <p>CSS + HTML is the foundation for front-end development, UI/UX design, and frameworks like React &amp; Tailwind.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CSS Basics -->
+    <section id="basics" class="basics">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 2.8rem; margin-bottom: 3rem;">CSS Basics</h2>
+
+            <h3>1. What is CSS?</h3>
+            <p><strong>CSS</strong> stands for <strong>Cascading Style Sheets</strong>. It is used to style and layout web pages written in HTML.</p>
+
+            <h3>2. How to Connect CSS to HTML</h3>
+            <div class="code-example">
+                &lt;!-- In the &lt;head&gt; section --&gt;<br>
+                &lt;link rel="stylesheet" href="style.css"&gt;
+            </div>
+
+            <h3>3. Basic CSS Syntax</h3>
+            <div class="code-example">
+                /* Selector */<br>
+                h1 {<br>
+                &nbsp;&nbsp;color: #6366f1;          /* Property: Value */<br>
+                &nbsp;&nbsp;font-size: 3rem;<br>
+                &nbsp;&nbsp;text-align: center;<br>
+                }
+            </div>
+
+            <h3>4. Important CSS Concepts</h3>
+            <div class="grid">
+                <div class="card">
+                    <strong>Colors &amp; Backgrounds</strong><br>
+                    <code>color, background, background-image</code>
+                </div>
+                <div class="card">
+                    <strong>Box Model</strong><br>
+                    <code>margin, padding, border</code>
+                </div>
+                <div class="card">
+                    <strong>Flexbox</strong><br>
+                    <code>display: flex;</code>
+                </div>
+                <div class="card">
+                    <strong>CSS Grid</strong><br>
+                    <code>display: grid;</code>
+                </div>
+                <div class="card">
+                    <strong>Responsive Design</strong><br>
+                    <code>@media queries</code>
+                </div>
+                <div class="card">
+                    <strong>Animations</strong><br>
+                    <code>transition, @keyframes</code>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 3rem;">5. Live CSS Example</h3>
+            <div class="demo-box" style="font-size: 1.8rem;">
+                This box is styled with CSS!
+            </div>
+            <div class="code-example">
+                .demo-box {<br>
+                &nbsp;&nbsp;background: linear-gradient(135deg, #ec4899, #8b5cf6);<br>
+                &nbsp;&nbsp;color: white;<br>
+                &nbsp;&nbsp;padding: 2rem;<br>
+                &nbsp;&nbsp;border-radius: 12px;<br>
+                &nbsp;&nbsp;text-align: center;<br>
+                }
+            </div>
+
+            <center>
+                <a href="https://youtu.be/KRXsAGEYrwo?si=AxuIu0ccNlh1Y8It" class="btn" style="font-size: 1.1rem;">Get Started Now!!</a>
+            </center>
+        </div>
+    </section>
+
+    <!-- Final Motivation -->
+    <section style="background: linear-gradient(135deg, #ec4899, #8b5cf6); color: white; text-align: center;">
+        <div class="container">
+            <h2 style="font-size: 2.6rem;">Ready to Create Beautiful Websites?</h2>
+            <p style="font-size: 1.3rem; max-width: 700px; margin: 1.5rem auto;">
+                HTML builds the structure. CSS makes it beautiful. Together, they give you the power to create anything on the web.
+            </p>
+            
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Learn CSS Basics • Made for Absolute Beginners</p>
+            <p>Happy Styling! 🎨</p>
+        </div>
+    </footer>
+
+</body>
+</html>
